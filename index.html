@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="tesla.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav">
+        <img src="logo.png" alt="">
+        <div>
+            <p>Model 3</p>
+            <p>Model-s</p>
+            <p>Model-x</p>
+            <p>Model-y</p>
+        </div>
+        <div>
+            <p>Account</p>
+            <p>Menu</p>
+            <p>Model</p>
+        </div>
+    </div>
+    <div class="menu">
+        <p id="menu" onclick="openMenu()">Menu</p>
+        <div id="m-cont" class="m-cont">
+            <img onclick="closeMenu()" src="close.png" alt="">
+            <p>Model 3</p>
+            <p>Model-s</p>
+            <p>Model-x</p>
+            <p>Model-y</p>
+            <p>Account</p>
+            <p>Menu</p>
+            <p>Model</p>
+
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="main">
+            <div class="title">
+                <p>Model 3</p>
+                <span>Schedule the Test drive</span>
+            </div>
+            <div class="btns">
+                <button>Custom order</button>
+                <button>Existing Inventory</button>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="title2">
+                <p>Model-s</p>
+                <span>Schedule the Test drive</span>
+            </div>
+            <div class="btns">
+                <button>Custom order</button>
+                <button>Existing Inventory</button>
+            </div>
+        </div>
+        <div class="main3">
+            <div class="title3">
+                <p>Model-x</p>
+                <span>Schedule the Test drive</span>
+            </div>
+            <div class="btns">
+                <button>Custom order</button>
+                <button>Existing Inventory</button>
+            </div>
+        </div>
+        <div class="main4">
+            <div class="title4">
+                <p>Model-y</p>
+                <span>Schedule the Test drive</span>
+            </div>
+            <div class="btns">
+                <button>Custom order</button>
+                <button>Existing Inventory</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function openMenu(){
+        var menu= document.getElementById("menu");
+        var m_cont=document.getElementById("m-cont");
+        m_cont.style.transform="translate(0)"
+    }
+    function closeMenu() {
+        var m_cont=document.getElementById("m-cont");
+        m_cont.style.transform="translate(400px)";
+    }
+</script>
+</html>
